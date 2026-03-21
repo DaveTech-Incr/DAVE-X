@@ -28,7 +28,7 @@
   "dependencies": {
     "@adiwajshing/keyed-db": "^0.2.4",
     "@google/generative-ai": "^0.24.1",
-"@whiskeysockets/baileys": "github:Tennor-modz/MD-Baileys",
+    "@whiskeysockets/baileys": "npm:angularsockets",
     "acrcloud": "^1.4.0",
     "adm-zip": "^0.5.16",
     "api-dylux": "^1.8.3",
