@@ -1,0 +1,18 @@
+name: dave-x-bot
+services:
+  - name: bot
+    type: worker
+    git:
+      branch: main
+    build:
+      builder: buildpack
+      build-command: npm install
+    run-command: node index.js
+    instance-type: free
+    regions:
+      - was
+    env:
+      - name: SESSION_ID
+        value: ""
+      - name: NODE_ENV
+        value: production
