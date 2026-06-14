@@ -1,7 +1,7 @@
 name: dave-x-bot
 services:
   - name: bot
-    type: worker
+    type: web
     git:
       branch: main
     build:
