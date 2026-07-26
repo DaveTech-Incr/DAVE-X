@@ -1,18 +1,23 @@
 services:
   - type: web
-    name: dave-x-bot
-    env: node
+    name: davex-bot
+    runtime: node
     plan: free
-    buildCommand: npm install
+    region: oregon
+    buildCommand: npm install --legacy-peer-deps
     startCommand: npm start
+    healthCheckPath: /health
+    autoDeploy: true
     envVars:
+      - key: NODE_ENV
+        value: production
       - key: SESSION_ID
         sync: false
       - key: DATABASE_URL
         fromDatabase:
-          name: dave-x-db
+          name: davex-db
           property: connectionString
 
 databases:
-  - name: dave-x-db
+  - name: davex-db
     plan: free
