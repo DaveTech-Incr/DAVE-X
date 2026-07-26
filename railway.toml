@@ -17,12 +17,7 @@ restartPolicyMaxRetries = 5
 # 2. In your Railway project, click "+ New" → "Database" → "PostgreSQL"
 #    Railway auto-sets DATABASE_URL in your service via variable reference.
 # 3. In your service Variables tab, add:
-#
 #    SESSION_ID   = <your DAVE-AI~ session id>
-#    MODE         = public
-#    TIME_ZONE    = Africa/Nairobi
-#    AUTO_LIKE_STATUS = true
-#    AUTO_READ_STATUS = true
 #
 #    DATABASE_URL is automatically linked from the Postgres plugin.
 # ─────────────────────────────────────────────────────────────
