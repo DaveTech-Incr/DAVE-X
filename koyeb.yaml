@@ -1,18 +1,23 @@
-name: dave-x-bot
-services:
-  - name: bot
-    type: worker
-    git:
-      branch: main
-    build:
-      builder: buildpack
-      build-command: npm install
-    run-command: node index.js
-    instance-type: free
-    regions:
-      - was
-    env:
-      - name: SESSION_ID
-        value: ""
-      - name: NODE_ENV
-        value: production
+name: davex-bot
+type: web
+
+build:
+  docker:
+    dockerfile: Dockerfile
+
+ports:
+  - port: 3000
+    protocol: http
+
+health_checks:
+  - path: /health
+    port: 3000
+    grace_period: 15s
+    interval: 30s
+    timeout: 10s
+
+env:
+  - key: NODE_ENV
+    value: production
+  - key: SESSION_ID
+    value: ""
