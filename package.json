@@ -35,7 +35,7 @@
       "@whiskeysockets/baileys": "^v7.0.0-rc.9",
     "archiver": "^7.0.1",
     "adm-zip": "^0.5.16",
-    "javascript-obfuscator": "^5.4.1"
+    "javascript-obfuscator": "^5.4.1",
     "awesome-phonenumber": "^7.8.0",
     "axios": "^1.13.5",
     "better-sqlite3": "^12.6.2",
