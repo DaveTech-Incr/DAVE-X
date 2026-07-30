@@ -1,7 +1,7 @@
 {
   "name": "DAVE-X",
   "description": "DAVE X WhatsApp Bot",
-  "repository": "https://github.com/Davex-254/DAVE-X",
+  "repository": "https://github.com/DaveTech-Incr/DAVE-X",
   "stack": "container",
   "addons": [
     {
